@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			
+		}
+		.label_name{
+			display: inline-block;
+			width: 100px;
+		}
+		input[type="text"]{
+			width: 300px;
+		}
+		#filetypes label{
+			margin-right: 10px;
+		}
+		#tsubmit{
+			position: absolute;
+			clip: rect(0,0,0,0);
+		}
+		#download{
+			margin-top: 20px;
+			display: none;
+		}
+		#download a{
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="wraper"></div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/spider.js"></script>
+	<script>
+		$("#wraper").spider({});
+	</script>
+</body>
+</html>
